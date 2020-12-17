@@ -17,25 +17,36 @@
 > docker run -it challenge
 1. Start the PSQL and MongoDB services.
 > /etc/init.d/postgresql start
+
 > /etc/init.d/mongodb start
 1. Source the environment variable file.
 > source /.env_vars
  1. If you'd like to explore the dbs before and after the ETL pipeline is executed, the credentials will be listed below. Note: Remember to login as postgres user before accessing the Postgres database:
  > root:/# su postgres
+ 
  > postgres:/# psql -d olap
+ 
  > olap=#
+ 
  Or
  > postgres:/# psql -d oltp
+ 
  > oltp=#
+ 
  You can access the MongoDB database from root.
  > root:/# mongo
+ 
  > show dbs
+ 
  > transactional 0.000GB
+ 
 1. Execute the etl.py script.
 > python3 etl.py
 1. The script will print 3 messages on the terminal.
 > Customers done.
+
 > Items done.
+
 > Orders done.
 
 
