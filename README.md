@@ -58,20 +58,21 @@
 
 
 ## Credentials
-* OLTP database
+### OLTP database
  * user: postgres
  * password: P4ssw0rd!
  * host: localhost
  * database: oltp
  * port: 5432
  
-* OLAP database
+### OLAP database
  * user: postgres
  * password: P4ssw0rd!
  * host: localhost
  * database: olap
  * port: 5432
  
-* MongoDB database
+### MongoDB database
  * host: localhost
  * port: 27017
+ * database: transactional
